@@ -2080,7 +2080,7 @@ I found this useful description: [https://libopenraw.freedesktop.org/formats/raf
 
 Most of the metadata is contained in the embedded JPEG.  However there is metadata in the embedded TIFF.  This is discussed here: [https://github.com/Exiv2/exiv2/issues/1402](https://github.com/Exiv2/exiv2/issues/1402).
 
-The MakerNote in the embedded JPEG in a RAF has a 12 byte header followed by an IFD.  The 12 bytes header is the ascii string FUJIFILM followed by the bytes 0x0c 0 0 0.  Perhaps it's a coincidence that that 0x0c00000000 is bigEndian '12'.  It's possible that the header is "FUJIFILM"long and long is the offset to the IFD.  As RAF is a big endian file, that's possible.  The code in both Exiv2 and tvisitor however simply skips the 12 byte header and reads the IFD. 
+The MakerNote in the embedded JPEG in a RAF has a 12 byte header followed by an IFD.  The 12 bytes header is the ascii string FUJIFILM followed by the bytes 0x0c 0 0 0.  Perhaps it's a coincidence that 0x0c00000000 is bigEndian '12'.  It's possible that the header is "FUJIFILM"long and long is the offset to the IFD.  As RAF is a big endian file, that's possible.  The code in both Exiv2 and tvisitor however simply skips the 12 byte header and reads the IFD. 
 
 [TOC](#TOC)
 <div id="RW2"/>
