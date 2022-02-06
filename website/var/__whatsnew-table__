@@ -142,8 +142,8 @@
     <li>Updated Catalan Localisation</li>
     <li>Using mergify to sync select PRs between 0.27-maintenance and 0.28</li>
     <li>Monitoring API changes for v0.27 dot releases</li>
-    <li>Prelinary Dutch Localisation</li>
-    <li>Prelinary Support for Unix (FreeBSD and NetBSD)</li>
+    <li>Preliminary Dutch Localisation</li>
+    <li>Preliminary Support for Unix (FreeBSD and NetBSD)</li>
     <li>Better Build Bundle Dependency handling</li>
    </ol>
   </td>
