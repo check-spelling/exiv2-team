@@ -664,7 +664,7 @@
  <newsitem>
   <date>10-Jul-2007</date>
   <title>Exiv2 0.15 released</title>
-  <abstract>Maintenace release, support for Minolta G500 RAW files.
+  <abstract>Maintenance release, support for Minolta G500 RAW files.
   </abstract>
   <desc>This maintenance release fixes a number of bugs, adds support for
    Minolta G500 RAW files and has minor tag and some larger translation updates.
