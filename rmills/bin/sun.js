@@ -197,7 +197,7 @@
 //*********************************************************************/
 
 // isPosInteger returns false if the value is not a positive integer, true is
-// returned otherwise.  The code is from taken from Danny Goodman's Javascript
+// returned otherwise.  The code is from taken from Danny Goodman's JavaScript
 // Handbook, p. 372.
 
 	function isPosInteger(inputVal) 
