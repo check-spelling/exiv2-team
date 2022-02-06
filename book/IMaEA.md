@@ -6362,7 +6362,7 @@ Exiv2::Image::auto_ptr Exiv2::ImageFactory::open(unsigned char const * __ptr64,l
 Exiv2::Image::auto_ptr Exiv2::ImageFactory::open(class std::auto_ptr<class Exiv2::BasicIo>)build>
 ``` 
 
-**Caution:** _You should use the "Developer Command Prompt" in Visual Studio Studio to ensure you have the utilities dumpbin and undname on your path.  To filter the output with grep, you will need to ensure grep is on your PATH._
+**Caution:** _You should use the "Developer Command Prompt" in Visual Studio to ensure you have the utilities dumpbin and undname on your path.  To filter the output with grep, you will need to ensure grep is on your PATH._
 
 Performing the same tests on a default build (without UNICODE path support), shows one less entry point because the library does not provide the UNICODE entry-point _**Exiv2::ImageFactory::open(std::wstring,const bool& )**_.
 
