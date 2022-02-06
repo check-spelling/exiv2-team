@@ -742,7 +742,7 @@ int WaitAndPrintICMPs(int socketConnectionToHost, int TimeoutInSeconds, int Retu
     unsigned int sizeOfRemoteHost = (int) sizeof(remoteHost);
     ssize_t numberOfBytesReceived; 
 
-    struct ip* packetInterpetedAsIPPacket;
+    struct ip* packetInterpretedAsIPPacket;
     int ipHeaderLength;
     struct PingICMPPacket* icmpPacket;
     int icmpPacketSize;
@@ -810,11 +810,11 @@ int WaitAndPrintICMPs(int socketConnectionToHost, int TimeoutInSeconds, int Retu
             */
             
             //Interpret packet as IP packet to remove header
-            packetInterpetedAsIPPacket = (struct ip*)pingReplyBuffer;
+            packetInterpretedAsIPPacket = (struct ip*)pingReplyBuffer;
         
             //The ip_hl item within the IP packet has the length of the IP header expressed as bytes 
             //(shifted right twice, thus need to shift left to compensate.
-            ipHeaderLength = packetInterpetedAsIPPacket->ip_hl << 2;
+            ipHeaderLength = packetInterpretedAsIPPacket->ip_hl << 2;
         
             //Now we know the IP header length we can get a pointer to the ICMP section of the packet
             icmpPacket = (struct PingICMPPacket*)(pingReplyBuffer + ipHeaderLength);
@@ -860,7 +860,7 @@ int WaitAndPrintICMPs(int socketConnectionToHost, int TimeoutInSeconds, int Retu
                         printf("Response from %s: icmp_seq=%u ttl=%d time=%.3f ms\n", 
                                 inet_ntoa(remoteHost.sin_addr),
                                 icmpPacket->icmpHeader.icmp_seq,
-                                packetInterpetedAsIPPacket->ip_ttl,
+                                packetInterpretedAsIPPacket->ip_ttl,
                                 roundTripTimeInMS);
                         fflush(stdout);
                     }//endif
