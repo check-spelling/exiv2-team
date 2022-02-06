@@ -15,7 +15,7 @@ To use this:
 	
 	The program has to guess the difference between GPS time and camera time.
 	GPS time is UTC (GMT) time.
-	Camera time is whateve you set in the camera.
+	Camera time is whatever you set in the camera.
 	This program will write/read a file tzinfo with the delta info.
 	The program guesses that this will be the offset from UTC time
 	for your desktop computer!  If the tzinfo exists, it will be read
