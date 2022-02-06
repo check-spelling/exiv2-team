@@ -277,7 +277,7 @@ def test_driver ():
     if b(): test_error ()
     if c(): test_error ()
 
-    # Math function tests. (Not by any means exhausive, but I believe
+    # Math function tests. (Not by any means exhaustive, but I believe
     # representative.
     m = surd (pow (13.2, 2.5))
     if `float(m)` != `math.pow (13.2, 2.5)`: test_error ()
