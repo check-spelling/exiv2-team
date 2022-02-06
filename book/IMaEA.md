@@ -4499,7 +4499,7 @@ $
 
 A common pattern in the Exiv2 code is the table/function pattern. 
 
-| Fuction         | Purpose | 
+| Function        | Purpose |
 |:--              |:--      |
 | cfgSelFct       | determine which cfg + def of a corresponding array-set to use. |
 | ConvertFct      | Convert between two keys |
