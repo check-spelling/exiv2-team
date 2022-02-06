@@ -119,7 +119,7 @@ if [ "$MASK_ONLY" ] && \
    [ "$OUTLINE" -o "$HIGHLIGHT" -o "$SHADOW" \
        -o "X$ROTATE" != 'X' -o "X$THICKNESS" != 'X'  ]; then
   echo >&2 \
-      "$PROGNAME: Piece enhancement ignored, when mask only \"-m\" otpion given"
+      "$PROGNAME: Piece enhancement ignored, when mask only \"-m\" option given"
 fi
 
 # -----------------------------------------------------
