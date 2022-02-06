@@ -1421,7 +1421,7 @@ I dumped IMG_3578.HEIC with dmpf and disassembled it by hand:
    0xa8c     2700: _...__F._._____._.7.  ->  00 01 f0 d3 00 00 46 cc 00 08 00 00 00 00 00 
    
    EXC = extent_count   CM = construction_method #E = Number of Entries  DRI = data_reverence_index
-   OFF = base_offset   o-l = offset-length       ID = Indentifier
+   OFF = base_offset   o-l = offset-length       ID = Identifier
 ```
 
 The code in ISOBMFF/iloc.cpp is (effectively):
