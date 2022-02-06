@@ -15,7 +15,7 @@ def get_links(uri):
 
     This is actually not trivial; there's the <base> element to deal with, as
     well as the interesting problem of resolving relative URIs.  This function
-    implaments this resolution as defined at
+    implements this resolution as defined at
     http://www.w3.org/TR/REC-html40/struct/links.html#h-12.4.1.
 
     The returned list has had all duplicates stripped out, and each URI has had
