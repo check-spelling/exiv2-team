@@ -10,7 +10,7 @@
 # Cameron Hayne (macdev@hayne.net), December 2003
 # Modified as suggested by Paul Russell (prussell@sonic.net), May 2006
 #          to allow either file or folder as source
-# Mofified to work with ".app" files, January 2007
+# Modified to work with ".app" files, January 2007
 
 scriptname=`basename $0`
 if [ $# -lt 2 ]; then
