@@ -1325,7 +1325,7 @@ _The item location box provides a directory of resources in this or other Files,
 
 This is a single box with which contains an array of ID/extent/length tuples.  We are very interesting the extend/length of the Exif ID.
 
-Please be aware that the order of the  iinf and iloc boxes is not specified.  In tvisitor, we parse Exif metadata before we leave the the meta box.
+Please be aware that the order of the  iinf and iloc boxes is not specified.  In tvisitor, we parse Exif metadata before we leave the meta box.
 
 The iloc box is is specified as follows:
 
@@ -3178,7 +3178,7 @@ A tag is the unit of data storage in a tiff entry.  It has a tag (uint16\_t), ty
 
 It's important to appreciate that when you visit an IFD, you need a dictionary of tag->name to know the meaning of the tag.  That dictionary is not a constant, it depends on the IFD that is being read.  In the case of the MakerNote, the dictionary of tag->name depends on the Manufacturer.  The tvisitor.cpp program invokes code to set the makerDict when it reads the Make (0x010f) in the "top-level" IFD.
 
-Exiv2 (and tvisitor.cpp) report tags with the syntax such as Exif.Image.Make. Exif.Photo.DateTimeOriginal.  This syntax is of the format:  Family.Group.Tagname.  There are three Families in Exiv2 which are Exif, IPTC and Xmp.  The group Image implies that the tag was read in IFD0, the group Photo implies that the tag was read in the the Exif IFD.  tvisitor.cpp has about 10 groups (Image, Photo, GPS, Nikon, Apple, Canon etc).  Exiv2 has 106 groups as each of about 10 manufacturers have about 10 sub groups.
+Exiv2 (and tvisitor.cpp) report tags with the syntax such as Exif.Image.Make. Exif.Photo.DateTimeOriginal.  This syntax is of the format:  Family.Group.Tagname.  There are three Families in Exiv2 which are Exif, IPTC and Xmp.  The group Image implies that the tag was read in IFD0, the group Photo implies that the tag was read in the Exif IFD.  tvisitor.cpp has about 10 groups (Image, Photo, GPS, Nikon, Apple, Canon etc).  Exiv2 has 106 groups as each of about 10 manufacturers have about 10 sub groups.
 
 For simplicity, tvisitor.cpp only supports the family Exif, however it has code to decode and present IPTC, ICC and Xmp metadata.
 
