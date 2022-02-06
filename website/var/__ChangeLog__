@@ -525,7 +525,7 @@ Changes from version 0.25 to 0.26
 	- <a href="http://dev.exiv2.org/issues/0000922">0000922</a>:	Add options -pS and -dI to application exiv2
 	- <a href="http://dev.exiv2.org/issues/0000855">0000855</a>:	Segfault when accessing focalLength with 0.23
 				(Tobias E.)
-	- <a href="http://dev.exiv2.org/issues/0000756">0000756</a>:	Access to ICC Profile (TAG: 0x8773) data in Exif as uninterpretted binary
+	- <a href="http://dev.exiv2.org/issues/0000756">0000756</a>:	Access to ICC Profile (TAG: 0x8773) data in Exif as uninterpreted binary
 				(Ray NA)
 	- <a href="http://dev.exiv2.org/issues/0000676">0000676</a>:	Patch for reading ICC color profiles
 				(Andreas Huggel)
