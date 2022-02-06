@@ -1,7 +1,7 @@
 <br><br><br><br>
 <center><img src="exiv2-large.png" width="600"/></center>
 
-<h3 align=center style="font-size: 36px;color:#FF4646;font-faily: Palatino, Times, serif;"><br>Image Metadata<br><i>and</i><br>Exiv2 Architecture</h3>
+<h3 align=center style="font-size: 36px;color:#FF4646;font-family: Palatino, Times, serif;"><br>Image Metadata<br><i>and</i><br>Exiv2 Architecture</h3>
 
 <h3 align=center style="font-size:24px;color:#23668F;font-family: Palatino, Times, serif;">Robin Mills<br>2021-10-06</h3>
 
