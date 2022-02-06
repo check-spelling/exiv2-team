@@ -1107,7 +1107,7 @@ function stringifyDatum(datum, opts, isTTY) {
         break;
     case OM_COMPACT:
         // Dev Note: A still relatively experimental attempt at a more
-        // compact ouput somewhat a la Python's repr of a dict. I.e. try to
+        // compact output somewhat a la Python's repr of a dict. I.e. try to
         // fit elements on one line as much as reasonable.
         if (datum === undefined) {
             // pass
