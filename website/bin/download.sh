@@ -39,7 +39,7 @@ do
     cp    -p  $P  $basedir/html/builds/$p
 	size=$(ls -la        html/builds/$p | sed -e 's#  # #g' | cut -d' ' -f 5)
 	echo size = $size
-	# Why is stat platform depenendent?
+	# Why is stat platform dependent?
 	date=$($statbin -c "%y"  html/builds/$p | cut -d' ' -f 1-2 | cut -d: -f 1-2)
 	checkSum=$(sha256sum html/builds/$p | cut -d' ' -f 1)
 
