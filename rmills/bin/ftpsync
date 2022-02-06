@@ -709,7 +709,7 @@ sub print_syntax() {
   print "\n";
   print " Later mentioned options and parameters overwrite those mentioned earlier.\n";
   print " Command line options and parameters overwrite those in the config file.\n";
-  print " Don't use '\"', although mentioned default values might motiviate you to.\n";
+  print " Don't use '\"', although mentioned default values might motivate you to.\n";
   print "\n";
 }
 
