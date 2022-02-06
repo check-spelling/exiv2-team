@@ -693,7 +693,7 @@ The format of XMP <B>LangAlt</B> values includes an optional language qualifier:
 </PRE>
 
 <P>
-The double quotes around the <I>language-code</I> are optional. If no languge qualifier
+The double quotes around the <I>language-code</I> are optional. If no language qualifier
 is supplied, then the value of &quot;x-default&quot; is used. More information 
 on the language format can be found at: <A HREF="https://www.ietf.org/rfc/rfc3066.txt">https://www.ietf.org/rfc/rfc3066.txt</A>
 <P>
