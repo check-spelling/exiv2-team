@@ -4913,7 +4913,7 @@ Exiv2 has an abstract TiffVisitor class, and the following concrete visitors:
 | class TiffEncoder | TiffVisitor    | Encodes metadata                     |                        |
 | class TiffCopier  | TiffVisitor    | Visits file and copies to a new file | image->writeMetadata() |
 
-TiffVisitor is the "beating heart" of Exiv2.  It is both ingeneous and very difficult to understand.  Although I've worked on the Exiv2 code for more than 12 years, it is only in the process of writing this book that I have come to an (_incomplete)_ understanding of its design.  
+TiffVisitor is the "beating heart" of Exiv2.  It is both ingenious and very difficult to understand.  Although I've worked on the Exiv2 code for more than 12 years, it is only in the process of writing this book that I have come to an (_incomplete)_ understanding of its design.  
 
 TiffVisitor is actually a state machine with a stack.  The code pushes an initial object on the stack and procedes to process the element on top of stack until empty.  Some tags, such as a makernote push objects on the stack.  Reaching the end of an object, pops the stack.  There is a "go" flag to enable the visitor to abort.  The TiffReader creates a vector of objects which are post-processed to create the metadata.
 
