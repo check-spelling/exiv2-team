@@ -19,7 +19,7 @@ const char* leafname(const char* filename)
     delim['/' ] = true ;
     if ( filename ) {
       leaf += strlen(filename) -1 ;
-      // step up before the "/" deliminator
+      // step up before the "/" delimiter
       while ( leaf > filename && !delim[leaf[0]] ) leaf -- ;
       if (    delim[leaf[0]]                     ) leaf ++ ;
     }
