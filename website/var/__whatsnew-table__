@@ -97,7 +97,7 @@
    <p>Highlights of Exiv2 v0.27.3</p>
    <ol>
     <li>Bug and security fixes</li>
-    <li>UNIX suppport</li>
+    <li>UNIX support</li>
     <li>Support for building with C++11 and C++14</li>
     <li>Revised build and test environments</li>
     <li>Revised documentation</li>
