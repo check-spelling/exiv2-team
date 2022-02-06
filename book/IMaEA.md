@@ -2103,7 +2103,7 @@ We deal with those differences in TiffImage::valid() as follows:
 
 ```cpp
     valid_ =  (magic_==42||magic_==43||magic_==85) && (c == C) && (c=='I'||c=='M') && bytesize == 8 && version == 0;
-    // Panosonic have augmented tiffDict with their keys
+    // Panasonic have augmented tiffDict with their keys
     if ( magic_ == 85 ) {
         setMaker(kPano);
         for ( TagDict::iterator it = panoDict.begin() ; it != panoDict.end() ; it++ ) {
