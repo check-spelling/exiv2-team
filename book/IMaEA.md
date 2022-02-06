@@ -6185,7 +6185,7 @@ The following programs are built and installed in /usr/local/bin.
 | _**addmoddel**_   | Demonstrates Exiv2 library APIs to add, modify or delete metadata          |
 | _**exifcomment**_ | Set Exif.Photo.UserComment in an image                                     |
 | _**exifdata**_    | Prints _**Exif**_ metadata in different formats in an image                |
-| _**exifprint**_   | Print _**Exif**_ metadata in images<br>Miscelleous other features          |
+| _**exifprint**_   | Print _**Exif**_ metadata in images<br>Miscellaneous other features          |
 | _**exifvalue**_   | Prints the value of a single _**Exif**_ tag in a file                      |
 | _**exiv2**_       | Command line utility to read, write, delete and modify Exif, IPTC, XMP and ICC image metadata.<br>This is the primary test tool used by Team Exiv2 and can exercise almost all code in the library.  Due to the extensive capability of this utility, the APIs used are usually less obvious for casual code inspection. | 
 | _**exiv2json**_   | Extracts data from image in JSON format.<br>This program also contains a parser to recursively parse Xmp metadata into vectors and objects. | 
