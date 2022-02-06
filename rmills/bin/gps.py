@@ -246,7 +246,7 @@ def gps():
 	print "number of timepoints = ",len(timedict)
 
 	##
-	# fild all the images in this this directory
+	# fild all the images in this directory
 	if len(timedict):
 		image 		= 0
 		firstTime 	= True
