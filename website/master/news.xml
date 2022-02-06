@@ -363,7 +363,7 @@
   </abstract>
   <desc>Exiv2 introduces its first support for Video metadata.
   Many more cameras and accessories are now recognised.
-  Numerous bugs fixes, build and test improvments.
+  Numerous bugs fixes, build and test improvements.
   More details: <a title="ChangeLog" href="changelog.html">ChangeLog</a>.
   </desc>
  </newsitem>
