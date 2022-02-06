@@ -25,7 +25,7 @@
 #    -ms size     Trim/expand mask to fit the size given, with peice centered
 #                 Warning: mask should include enough space for any effects
 #
-#    -l           Add an outline along egde of piece
+#    -l           Add an outline along edge of piece
 #    -r angle     Rotate piece by this angle
 #    -h           Add highlight to piece
 #    -t pixels    Add thickness to piece
@@ -85,7 +85,7 @@ while [ $# -gt 0 ]; do
   -mp) PRESERVE=true ;;          # preserve the image mask and results as cut
   -ms) shift; MASK_SIZE="$1" ;;  # Crop mask to fit the sized image
 
-  -l)  OUTLINE=true ;;           # add an outline along egde of piece
+  -l)  OUTLINE=true ;;           # add an outline along edge of piece
   -r)  shift; ROTATE=$1 ;;       # rotate piece by this angle
   -h)  HIGHLIGHT=true ;;         # add highlight to piece
   -t)  shift; THICKNESS="$1" ;;  # add thickness to piece
