@@ -15,7 +15,7 @@ double rads = pi/180.0;
 double L,g,daylen;
 double SunDia = 0.53;     // Sunradius degrees
 
-double AirRefr = 34.0/60.0; // athmospheric refraction degrees //
+double AirRefr = 34.0/60.0; // atmospheric refraction degrees //
 
 //   Get the days to J2000
 //   h is UT in decimal hours

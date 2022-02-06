@@ -114,7 +114,7 @@ def establishProxyDiv( proxyDivision ):
 		print " -->  8.  Makes proxies 1/8 the original resolution dimensions"
 		newProxyDivision = input("\n\n Please provide a number choice for divisional level to make proxies: ")
 		if not newProxyDivision in choiceList:
-			print "\n What you have enterred is not in the list of options above, please chose again."
+			print "\n What you have entered is not in the list of options above, please chose again."
 			newProxyDivision = input("\n\n Please provide a number choice for divisional level to make proxies: ")
 		
 		return int(round(newProxyDivision))
@@ -203,7 +203,7 @@ def getProxyDivision( file, resX, resY, proxyDivision ):
 		#Image is landscape
 		if resX >= targetRes:
 			proxyDivision = float(resX) / float(targetRes)
-			#print "proxyDiviosn is: " + str(proxyDivision)
+			#print "proxyDivision is: " + str(proxyDivision)
 			return proxyDivision 
 		else:
 			proxyDivision = 1
@@ -213,7 +213,7 @@ def getProxyDivision( file, resX, resY, proxyDivision ):
 		#Image is portrait
 		if resY >= targetRes:
 			proxyDivision = float(resY) / float(targetRes)
-			#print "proxyDiviosn is: " + str(proxyDivision)
+			#print "proxyDivision is: " + str(proxyDivision)
 			return proxyDivision
 		else:
 			proxyDivision = 1
@@ -224,12 +224,12 @@ def helpSection():
 	print "\n HELP / INSTRUCTIONS: \n"
 	print '''
  FLAGS:
- -p\t Sets the divisional ammount to create the new smaller res files. The images will be divided by this number.
+ -p\t Sets the divisional amount to create the new smaller res files. The images will be divided by this number.
  -t\t CURRENTLY NOT IMPLEMENTED: is intended to maintain the file format of the original files -otherwise will default to jpeg.
  -w\t Sets the target proxy Res so that the larger dimension is 640 - which is an ideal size for email and web work. 
- 	 If images are smaller than this res they will not be alterred.
+ 	 If images are smaller than this res they will not be altered.
  -1\t Sets the target proxy Res so that the lerger dimension is 1024 - for a 1k approximation. 
- 	 If images are smaller than this res they will not be alterred.
+ 	 If images are smaller than this res they will not be altered.
 	'''
 	
 if __name__ == "__main__":

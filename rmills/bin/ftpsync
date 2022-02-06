@@ -396,7 +396,7 @@ sub buildremotetree() {
         if ($dodebug) { print "File: ".$curnewrf."\n"; }
         elsif ($doverbose gt 1) { print "."; }
       }
-      elsif (! $doquiet) { print "Unkown file: $curlsline\n"; }
+      elsif (! $doquiet) { print "Unknown file: $curlsline\n"; }
     }
     elsif ($dodebug) { print "Ignoring.\n"; }
   }
@@ -709,7 +709,7 @@ sub print_syntax() {
   print "\n";
   print " Later mentioned options and parameters overwrite those mentioned earlier.\n";
   print " Command line options and parameters overwrite those in the config file.\n";
-  print " Don't use '\"', although mentioned default values might motiviate you to.\n";
+  print " Don't use '\"', although mentioned default values might motivate you to.\n";
   print "\n";
 }
 
@@ -719,7 +719,7 @@ sub print_options() {
   # meta
   print "returncode    = ", $returncode    , "\n";
   print "configfile    = ", $configfile    , "\n";
-  # basiscs
+  # basics
   print "syncdirection = ", $syncdirection , "\n";
   print "localdir      = ", $localdir      , "\n";
   # FTP stuff

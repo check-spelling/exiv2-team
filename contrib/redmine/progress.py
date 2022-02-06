@@ -310,7 +310,7 @@ def reportResponse():
         issues=j['issues']
         for i in issues:
             try:
-                if i['fixed_version']['name'] == verion:
+                if i['fixed_version']['name'] == version:
                     issue=i['subject']
                     created=i['created_on']
                     updated=i['updated_on']

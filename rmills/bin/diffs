@@ -2,7 +2,7 @@
 
 syntax()
 {
-	echo useage: diffs file1 file2
+	echo usage: diffs file1 file2
 }
 if [ ${#argv} -ne 2 ]; then syntax ; exit 1 ; fi
 

@@ -165,7 +165,7 @@ Rebuilding the website
     Discussion: https://github.com/Exiv2/exiv2/issues/1
                 https://github.com/Exiv2/exiv2/issues/915
     Goto https://github.com/exiv2/exiv2
-    Select  'releases' from the ribbon (commits, branches, releases, contributores, license)
+    Select  'releases' from the ribbon (commits, branches, releases, contributors, license)
     Title should be something like: "First Release Candidate for Exiv2 v0.27.5"
     
     Run the release action:

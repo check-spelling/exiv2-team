@@ -10,7 +10,7 @@
 
 #
 # Script is Tested with 10.4 - Preliminary Testing with 10.5 is under way.
-# This script requries many standard OS X applications in order to operate
+# This script requires many standard OS X applications in order to operate
 #
 
 
@@ -24,13 +24,13 @@
 #
 # Version History
 #
-#               0.0.8   Imporved support for broken symbolic links
+#               0.0.8   Improved support for broken symbolic links
 #               0.0.7   Improved 10.5 Support
 #               0.0.6   Removal Script Fixes
 #               0.0.5   Improved Alias Handling, Improved Duplicate Handling
 #               0.0.4   Fixed minor testing issues
-#               0.0.3   Minor packaging improvments
-#               0.0.2   Added minimal help function and imporved error reporting 
+#               0.0.3   Minor packaging improvements
+#               0.0.2   Added minimal help function and improved error reporting 
 #               0.0.1   Initial Release
 #
 
@@ -38,7 +38,7 @@
 
 function check_arguments {
 
-    if [ "$num_argumnets" -lt "1" ] ; then
+    if [ "$num_arguments" -lt "1" ] ; then
         echo "WARNING ! : No argument provided. Nothing added to the Dock."
         echo "            Usage : additemtodock /Applications/Safari.app"
         
@@ -84,7 +84,7 @@ function check_is_duplicate_others {
     application_check1=`defaults read com.apple.dock persistent-others | grep -w _CFURLString | awk 'BEGIN { FS = "\"" } ; { print $4 }' | grep -x "${item2add}"`
     application_check2=`defaults read com.apple.dock persistent-others | grep -w _CFURLString | awk 'BEGIN { FS = "\"" } ; { print $4 }' | grep -x "${item2add}/"`
     if [ "${application_check1}" != "" ] || [ "${application_check2}" != "" ] ; then
-        echo "WANRING! : Item is already in the dock, it will not be added again : ${item2add}"
+        echo "WARNING! : Item is already in the dock, it will not be added again : ${item2add}"
         # This item is in the dock
         return 1
     else
@@ -112,7 +112,7 @@ function add_other {
     #Adding Other
     if [ -d "${item2add}" ] || [ -f "${item2add}" ] || [ -L "${item2add}" ]; then
 
-	# Caclulate the number of periods in the item name
+	# Calculate the number of periods in the item name
 	basename=`basename "${item2add}"`
 	num_periods=`echo "${basename}" | awk -F "." '{ print NF }'`
 	(( num_periods-- ))
@@ -150,7 +150,7 @@ function check_is_application {
 ########### LOGIC AND EXECUTION ###########
 
 # General Settings
-num_argumnets=$#
+num_arguments=$#
 exit_status=0
 
 # Check we are good to go
@@ -184,7 +184,7 @@ do
 
 done
 
-# Restarts the Dock (any user modifiacation to the dock will be lost unless they have been saved)
+# Restarts the Dock (any user modification to the dock will be lost unless they have been saved)
 killall Dock
 
 exit_now

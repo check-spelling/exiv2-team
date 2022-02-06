@@ -22,10 +22,10 @@
 #
 #    -m           Return the mask that will be used, ignore photo argument
 #    -mp          Preserve the input mask as is, don't trim or adjust its size
-#    -ms size     Trim/expand mask to fit the size given, with peice centered
+#    -ms size     Trim/expand mask to fit the size given, with piece centered
 #                 Warning: mask should include enough space for any effects
 #
-#    -l           Add an outline along egde of piece
+#    -l           Add an outline along edge of piece
 #    -r angle     Rotate piece by this angle
 #    -h           Add highlight to piece
 #    -t pixels    Add thickness to piece
@@ -65,7 +65,7 @@ shadow=40x4+4+4        # shadow argument
 # Add the fixed option parts (do not adjust)
 shade_angle="${shade_angle}x21.78"       # shade azmuth angle
 shade_blur="0x$shade_blur"               # rounding blur radius limit
-shade_surface="${shade_surface}x50%"     # sigmodial-cotrast midpoint
+shade_surface="${shade_surface}x50%"     # sigmoidal-contrast midpoint
 shade_contrast="${shade_contrast}%"      # reduce highlight intensity
 
 # Temporary working images (with auto-clean-up on exit)
@@ -85,7 +85,7 @@ while [ $# -gt 0 ]; do
   -mp) PRESERVE=true ;;          # preserve the image mask and results as cut
   -ms) shift; MASK_SIZE="$1" ;;  # Crop mask to fit the sized image
 
-  -l)  OUTLINE=true ;;           # add an outline along egde of piece
+  -l)  OUTLINE=true ;;           # add an outline along edge of piece
   -r)  shift; ROTATE=$1 ;;       # rotate piece by this angle
   -h)  HIGHLIGHT=true ;;         # add highlight to piece
   -t)  shift; THICKNESS="$1" ;;  # add thickness to piece
@@ -119,7 +119,7 @@ if [ "$MASK_ONLY" ] && \
    [ "$OUTLINE" -o "$HIGHLIGHT" -o "$SHADOW" \
        -o "X$ROTATE" != 'X' -o "X$THICKNESS" != 'X'  ]; then
   echo >&2 \
-      "$PROGNAME: Piece enhancment ignored, when mask only \"-m\" otpion given"
+      "$PROGNAME: Piece enhancement ignored, when mask only \"-m\" option given"
 fi
 
 # -----------------------------------------------------

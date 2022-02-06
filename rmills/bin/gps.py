@@ -15,7 +15,7 @@ To use this:
 	
 	The program has to guess the difference between GPS time and camera time.
 	GPS time is UTC (GMT) time.
-	Camera time is whateve you set in the camera.
+	Camera time is whatever you set in the camera.
 	This program will write/read a file tzinfo with the delta info.
 	The program guesses that this will be the offset from UTC time
 	for your desktop computer!  If the tzinfo exists, it will be read
@@ -92,7 +92,7 @@ def s(angle):
 ##
 # dictionary search (closest match)
 def search(dict,target):
-	"""search(dict,taget) - search for closest match"""
+	"""search(dict,target) - search for closest match"""
 	s	 = sorted(dict.keys())
 	N	 = len(s)
 	low	 = 0
@@ -236,7 +236,7 @@ def gps():
 		file.close()
 		dom = xml.dom.minidom.parseString(data)
 
-		# read the XML with and without the namepace
+		# read the XML with and without the namespace
 		handleGPX(dom,timedict,False)
 		handleGPX(dom,timedict,ns)
 			
@@ -246,7 +246,7 @@ def gps():
 	print "number of timepoints = ",len(timedict)
 
 	##
-	# fild all the images in this this directory
+	# fild all the images in this directory
 	if len(timedict):
 		image 		= 0
 		firstTime 	= True

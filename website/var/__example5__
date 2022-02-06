@@ -156,7 +156,7 @@
 <div class="line">    xmpData[<span class="stringliteral">&quot;Xmp.dc.publisher&quot;</span>] = <span class="stringliteral">&quot;James Bond&quot;</span>;  <span class="comment">// creates an unordered array</span></div>
 <div class="line">    xmpData[<span class="stringliteral">&quot;Xmp.dc.publisher[1]/?ns:role&quot;</span>] = <span class="stringliteral">&quot;secret agent&quot;</span>;</div>
 <div class="line"></div>
-<div class="line">    <span class="comment">// Add a qualifer to an array element of Xmp.dc.creator (added above)</span></div>
+<div class="line">    <span class="comment">// Add a qualifier to an array element of Xmp.dc.creator (added above)</span></div>
 <div class="line">    tv.read(<span class="stringliteral">&quot;programmer&quot;</span>);</div>
 <div class="line">    xmpData.<a class="code" href="doc/classExiv2_1_1XmpData.html#a8ce28ae5c68a30b8e646c7ddfed75843" title="Add an Xmpdatum from the supplied key and value pair. This method copies (clones) the value...">add</a>(<a class="code" href="doc/classExiv2_1_1XmpKey.html" title="Concrete keys for XMP metadata.">Exiv2::XmpKey</a>(<span class="stringliteral">&quot;Xmp.dc.creator[2]/?ns:role&quot;</span>), &amp;tv);</div>
 <div class="line"></div>

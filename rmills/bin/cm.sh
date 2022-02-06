@@ -9,7 +9,7 @@
 # Syntax at bottom of script
 
 Syntax() {
-	echo useage: cm.sh [ clean \| unix \| xcode \| 2003 \| 2005 \| 2008 \| 2010 [64]]
+	echo usage: cm.sh [ clean \| unix \| xcode \| 2003 \| 2005 \| 2008 \| 2010 [64]]
 	exit 1
 }
 

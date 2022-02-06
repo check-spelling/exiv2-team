@@ -17,7 +17,7 @@
 				4
     1   2   3   4
 
-* Useage :
+* Usage :
   detab filename
 
 * Example:

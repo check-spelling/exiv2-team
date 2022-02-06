@@ -5,7 +5,7 @@ main(arguments) ;
 function main(arguments)
 {
 
-if ( ! arguments.length ) return print("useage: webmaker <photo-directory> title webdirectory url nCols\n") ;
+if ( ! arguments.length ) return print("usage: webmaker <photo-directory> title webdirectory url nCols\n") ;
 
 // Options
 var directory 	= arguments.length > 0 ? new File(arguments[0].toString()) 	: null								;
@@ -201,7 +201,7 @@ for ( var n = 0 ; n < names.length ; n++ ) {
 	var pname 	= n == 0 		? "default" : names[n-1] ;
 	var nname 	= n == (l-1)	? "default" : names[n+1] ;
 	var path    = dir + name + extension ;	
-	var defolt  = 'default'              ;
+	var default_  = 'default'              ;
 	
 	var file = fileOpenForWrite(path) ;
 
@@ -213,7 +213,7 @@ for ( var n = 0 ; n < names.length ; n++ ) {
 	file.writeln("  <tr>") ;
 	file.writeln("    <td>") ;
 	file.writeln("      <a href=\"" + escape(pname)  + extension + "\"><img src=\"/prev.gif\"></a>") ;
-	file.writeln("      <a href=\"" + escape(defolt) + extension + "\"><img src=\"/up.gif\"></a>") ;
+	file.writeln("      <a href=\"" + escape(default_) + extension + "\"><img src=\"/up.gif\"></a>") ;
 	file.writeln("      <a href=\"" + escape(nname)  + extension + "\"><img src=\"/next.gif\"></a>") ;
 	file.writeln("      &nbsp;" + (n+1) + " of " + l ) ;
 	file.writeln("    </td>") ;

@@ -421,7 +421,7 @@ int LookupHostAddress(const char* HostToPing, struct sockaddr_in* HostAddress)
         return(EINVAL); //invalid argument error return
     }
 
-    //Initalizing host address
+    //Initializing host address
     memset(HostAddress, 0, sizeof(struct sockaddr_in));
 
     /* Calling inet_addr to try to interpret the input address as a 
@@ -503,7 +503,7 @@ int LookupHostAddress(const char* HostToPing, struct sockaddr_in* HostAddress)
 int CreateSocketForCommunicationWithHost(const struct sockaddr_in HostAddress, int* SocketToReturn)
 {
     struct protoent* 	protocolInformation;
-    const int krecieveSocketBufferSize = 50 * 1024; //here we want 50K for size of receive buffer
+    const int kreceiveSocketBufferSize = 50 * 1024; //here we want 50K for size of receive buffer
     struct timeval pingTimeout;
     int error = 0;
 
@@ -564,13 +564,13 @@ int CreateSocketForCommunicationWithHost(const struct sockaddr_in HostAddress, i
      *    the buffer size but its not required.
      */
     (void) setsockopt(*SocketToReturn, SOL_SOCKET, SO_RCVBUF, 
-                        &krecieveSocketBufferSize, sizeof(krecieveSocketBufferSize));
+                        &kreceiveSocketBufferSize, sizeof(kreceiveSocketBufferSize));
     
 
     /* Now that we have the socket created we want to set the timeout on the socket.  This is
      * the time a ping request will wait before assuming failure.  Here we use the value which 
      * is passed to us as the timeout value.  We set the timeout by setting the timeout for
-     * recieve requests on the socket using setsockopt.
+     * receive requests on the socket using setsockopt.
      * First Argument: The socket we are editing the receive timeout.  In this case
      *    the socket we just created.  This timeout will end up being the time ping waits for a response.
      * Second Argument: UNIX constant SOL_SOCKET indicating we are editing a socket level
@@ -583,7 +583,7 @@ int CreateSocketForCommunicationWithHost(const struct sockaddr_in HostAddress, i
      * Return Value: There is actually a return value of zero on success and -1 on failure.
      */
 
-    //Setting the ping timeout to one second.  This way a recieve call will timeout after 1 
+    //Setting the ping timeout to one second.  This way a receive call will timeout after 1 
     //second later on.  This saves us from having to use UNIX signal alarms for timeouts
     pingTimeout.tv_sec = 1;
     pingTimeout.tv_usec = 0;
@@ -647,7 +647,7 @@ int CreateAndSendICMPPacket(struct sockaddr_in HostAddress, int SequenceNumber, 
 
     /* Now we will get time of day so we can add it to the "extra" data on the ICMP packet.
      * The time of day will allow us to calculate the round trip time on the ping upon
-     * recieveing the echo packet
+     * receiving the echo packet
      */
     error = gettimeofday(&PacketToSend.packetTimeStamp, NULL);
     
@@ -742,7 +742,7 @@ int WaitAndPrintICMPs(int socketConnectionToHost, int TimeoutInSeconds, int Retu
     unsigned int sizeOfRemoteHost = (int) sizeof(remoteHost);
     ssize_t numberOfBytesReceived; 
 
-    struct ip* packetInterpetedAsIPPacket;
+    struct ip* packetInterpretedAsIPPacket;
     int ipHeaderLength;
     struct PingICMPPacket* icmpPacket;
     int icmpPacketSize;
@@ -810,11 +810,11 @@ int WaitAndPrintICMPs(int socketConnectionToHost, int TimeoutInSeconds, int Retu
             */
             
             //Interpret packet as IP packet to remove header
-            packetInterpetedAsIPPacket = (struct ip*)pingReplyBuffer;
+            packetInterpretedAsIPPacket = (struct ip*)pingReplyBuffer;
         
             //The ip_hl item within the IP packet has the length of the IP header expressed as bytes 
             //(shifted right twice, thus need to shift left to compensate.
-            ipHeaderLength = packetInterpetedAsIPPacket->ip_hl << 2;
+            ipHeaderLength = packetInterpretedAsIPPacket->ip_hl << 2;
         
             //Now we know the IP header length we can get a pointer to the ICMP section of the packet
             icmpPacket = (struct PingICMPPacket*)(pingReplyBuffer + ipHeaderLength);
@@ -860,7 +860,7 @@ int WaitAndPrintICMPs(int socketConnectionToHost, int TimeoutInSeconds, int Retu
                         printf("Response from %s: icmp_seq=%u ttl=%d time=%.3f ms\n", 
                                 inet_ntoa(remoteHost.sin_addr),
                                 icmpPacket->icmpHeader.icmp_seq,
-                                packetInterpetedAsIPPacket->ip_ttl,
+                                packetInterpretedAsIPPacket->ip_ttl,
                                 roundTripTimeInMS);
                         fflush(stdout);
                     }//endif

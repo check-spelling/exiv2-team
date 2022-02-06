@@ -349,7 +349,7 @@ publishBundle()
     fi
 }
 
-libary_type=''
+library_type=''
 if [ $shared != 1 ]; then library_type=Static; fi
 
 ##

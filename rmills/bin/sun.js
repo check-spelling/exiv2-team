@@ -197,7 +197,7 @@
 //*********************************************************************/
 
 // isPosInteger returns false if the value is not a positive integer, true is
-// returned otherwise.  The code is from taken from Danny Goodman's Javascript
+// returned otherwise.  The code is from taken from Danny Goodman's JavaScript
 // Handbook, p. 372.
 
 	function isPosInteger(inputVal) 
@@ -799,11 +799,11 @@
 //***********************************************************************/
 //* Name:    calcSunTrueAnomaly							*/
 //* Type:    Function									*/
-//* Purpose: calculate the true anamoly of the sun				*/
+//* Purpose: calculate the true anomaly of the sun				*/
 //* Arguments:										*/
 //*   t : number of Julian centuries since J2000.0				*/
 //* Return value:										*/
-//*   sun's true anamoly in degrees							*/
+//*   sun's true anomaly in degrees							*/
 //***********************************************************************/
 
 	function calcSunTrueAnomaly(t)

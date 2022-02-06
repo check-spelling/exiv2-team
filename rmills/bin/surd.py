@@ -5,7 +5,7 @@
 # !!! REQUIRES PYTHON VERSION 1.2 OR LATER !!!
 #
 # Rational number class.  This module supports the creation and manipulation
-# of surds, or rational numbers.  The alllowed operations are +, -, *, /, pow,
+# of surds, or rational numbers.  The allowed operations are +, -, *, /, pow,
 # and unary -. Reverse methods for mixing with non-surds are supplied.
 # Floats are converted to surds by multiplying by the power of ten necessary
 # to make them whole numbers.  For example, 4.6 would be treated as 46/10.
@@ -277,7 +277,7 @@ def test_driver ():
     if b(): test_error ()
     if c(): test_error ()
 
-    # Math function tests. (Not by any means exhausive, but I believe
+    # Math function tests. (Not by any means exhaustive, but I believe
     # representative.
     m = surd (pow (13.2, 2.5))
     if `float(m)` != `math.pow (13.2, 2.5)`: test_error ()

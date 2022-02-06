@@ -22,7 +22,7 @@ bomb() {
 	exit 1
 }
 
-if [ "$EUID" != 0 ]; then error "ROOT priviledges required to run $0" ; fi
+if [ "$EUID" != 0 ]; then error "ROOT privileges required to run $0" ; fi
 
 tmp=/tmp/bootAndLaunch.txt
 c="$PWD"

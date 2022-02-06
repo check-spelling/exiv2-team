@@ -92,7 +92,7 @@ $OutFH	= \*STDOUT  unless $OutFH;
 ## Fallback tag if above is not found
 $HeadFallback = '<H2>';
 
-## Other gobals
+## Other globals
 
 $Bare      = 0;		# Skip printing HTML head/foot flag
 $BTag	   = 'B';	# Overstrike tag
@@ -103,7 +103,7 @@ $NoDepage  = 0;		# Do not strip page information
 $NoHeads   = 0;		# Do no header detection flag
 $SeeAlso   = 0;		# Do only SEE ALSO xrefs flag
 $Solaris   = 0;		# Solaris keyword search processing flag
-$Sun       = 0;		# Headers not overstriken flag
+$Sun       = 0;		# Headers no overstrike flag
 $Title     = '';	# Title
 $UTag	   = 'I';	# Underline tag
 $ftsz	   = 7;		# Bottome margin size
@@ -135,7 +135,7 @@ $txsz      = 52;	# Text body length size
 sub do_it {
 
     ##	Define while loop and then eval it when used.  The reason
-    ##	is to avoid the regular expression reevaulation in the
+    ##	is to avoid the regular expression reevaluation in the
     ##	section head detection code.
 
     $doitcode =<<'EndOfDoItCode';
@@ -260,7 +260,7 @@ sub get_cli_opts {
     return 0  unless
     GetOptions(
 	"bare",		# Leave out HTML, HEAD, BODY tags.
-	"belem=s",	# HTML Element for overstriked text (def: "B")
+	"belem=s",	# HTML Element for overstruck text (def: "B")
 	"botm=i",	# Number of lines for bottom margin (def: 7)
 	"cgiurl=s",	# CGI URL for linking to other manpages
 	"cgiurlexp=s",	# CGI URL Perl expr for linking to other manpages
@@ -273,7 +273,7 @@ sub get_cli_opts {
 	"pgsize=i",	# Number of lines in a page (def: 66)
 	"seealso",	# Link to other manpages only in the SEE ALSO section
 	"solaris",	# Parse 'man -k' output from a solaris system
-	"sun",		# Section heads are not overstriked in input
+	"sun",		# Section heads are not overstruck in input
 	"title=s",	# Title of manpage (def: Not defined)
 	"topm=i",	# Number of lines for top margin (def: 7)
 	"uelem=s",	# HTML Element for underlined text (def: "I")
@@ -402,8 +402,8 @@ sub htmlize2 {
 }
 
 ##---------------------------------------------------------------------------
-##	strike converts HTML special characters in overstriked text
-##	into entity references.  The entities are overstriked so
+##	strike converts HTML special characters in overstruck text
+##	into entity references.  The entities are overstruck so
 ##	strongize() and emphasize() will recognize the entity to be
 ##	wrapped in tags.
 ##
@@ -456,7 +456,7 @@ sub make_xref {
 ##---------------------------------------------------------------------------
 ##	man_k() process a keyword search.  The problem we have is there
 ##	is no standard for keyword search results from man.  Solaris
-##	systems have a different enough format to warrent dealing
+##	systems have a different enough format to warrant dealing
 ##	with it as a special case.  For other cases, we try our best.
 ##	Unfortunately, there are some lines of results that may be
 ##	skipped.
@@ -572,11 +572,11 @@ sub usage {
 Usage: $PROG [ options ] < infile > outfile
 Options:
   -bare            : Do not put in HTML, HEAD, BODY tags
-  -belem <elem>    : HTML Element for overstriked text (def: "B")
+  -belem <elem>    : HTML Element for overstruck text (def: "B")
   -botm <#>        : Number of lines for bottom margin (def: 7)
   -cgiurl <url>    : URL for linking to other manpages
   -cgiurlexp <url> : Perl expression URL for linking to other manpages
-  -compress        : Compress consective blank lines
+  -compress        : Compress consecutive blank lines
   -headmap <file>  : Filename of user section head map file
   -help            : This message
   -k               : Process a keyword search result
@@ -586,7 +586,7 @@ Options:
   -pgsize <#>      : Number of lines in a page (def: 66)
   -seealso         : Link to other manpages only in the SEE ALSO section
   -solaris         : Process keyword search result in Solaris format
-  -sun             : Section heads are not overstriked in input
+  -sun             : Section heads are not overstruck in input
   -title <string>  : Title of manpage (def: Not defined)
   -topm <#>        : Number of lines for top margin (def: 7)
   -uelem <elem>    : HTML Element for underlined text (def: "I")

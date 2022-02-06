@@ -694,7 +694,7 @@ a mail transfer agent, possibly on a different machine.
 
 This script will wait on STDIN (as does /bin/mail) for
 some text to be used as the first (textual) message body
-part.  Unlike /bin/mail, this behavior may be overriden
+part.  Unlike /bin/mail, this behavior may be overridden
 by use of switch w.  Failure to provide a Subject: on 
 the command line does NOT result in the user being asked
 for one (this also differs from /bin/mail).
@@ -728,7 +728,7 @@ Provide the name of the SMTP mailhost used to route SMTP mail.
 If this flag is set, the message provided must contain additional
 headers followed by a blank line and a message body.  It can be
 used to write additional headers into a message.  If you use this
-option, you must provide the blank line separarting headers and body!
+option, you must provide the blank line separating headers and body!
 
 =item B<-w> (No STDIN)
 

@@ -97,12 +97,12 @@ Program execution:
 where filename is the name of the data file to use.
 
 Datafile format:
-<line> : <parameter1><seperator><parameter1_value>
-<line> : <parameter2<seperator>parameter2_value>
-<line> : <parameter2><seperator>
+<line> : <parameter1><separator><parameter1_value>
+<line> : <parameter2<separator>parameter2_value>
+<line> : <parameter2><separator>
 <line> : <dataline>
 
-<seperator> : <space>*['='|':']<space>*
+<separator> : <space>*['='|':']<space>*
 <parameter1> : ['height'|'width'|'x'|'y']
 <parameter1_value> : <number>
 <parameter2> : ['border'|'wall'|'char']

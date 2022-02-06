@@ -110,7 +110,7 @@
    <p>Highlights of Exiv2 v0.27.3</p>
    <ol>
     <li>Bug and security fixes</li>
-    <li>UNIX suppport</li>
+    <li>UNIX support</li>
     <li>Support for building with C++11 and C++14</li>
     <li>Revised build and test environments</li>
     <li>Revised documentation</li>
@@ -161,8 +161,8 @@
     <li>Updated Catalan Localisation</li>
     <li>Using mergify to sync select PRs between 0.27-maintenance and 0.28</li>
     <li>Monitoring API changes for v0.27 dot releases</li>
-    <li>Prelinary Dutch Localisation</li>
-    <li>Prelinary Support for Unix (FreeBSD and NetBSD)</li>
+    <li>Preliminary Dutch Localisation</li>
+    <li>Preliminary Support for Unix (FreeBSD and NetBSD)</li>
     <li>Better Build Bundle Dependency handling</li>
    </ol>
   </desc>
@@ -300,7 +300,7 @@
 
  <newsitem>
   <date>17-May-2017</date>
-  <title>Exiv2 v0.26 slipsteam</title>
+  <title>Exiv2 v0.26 slipstream</title>
   <abstract>Release</abstract>
   <desc>Commercial License was discontinued and all mention removed from documentation.
   No code changes from v0.26.
@@ -363,7 +363,7 @@
   </abstract>
   <desc>Exiv2 introduces its first support for Video metadata.
   Many more cameras and accessories are now recognised.
-  Numerous bugs fixes, build and test improvments.
+  Numerous bugs fixes, build and test improvements.
   More details: <a title="ChangeLog" href="changelog.html">ChangeLog</a>.
   </desc>
  </newsitem>
@@ -664,7 +664,7 @@
  <newsitem>
   <date>10-Jul-2007</date>
   <title>Exiv2 0.15 released</title>
-  <abstract>Maintenace release, support for Minolta G500 RAW files.
+  <abstract>Maintenance release, support for Minolta G500 RAW files.
   </abstract>
   <desc>This maintenance release fixes a number of bugs, adds support for
    Minolta G500 RAW files and has minor tag and some larger translation updates.

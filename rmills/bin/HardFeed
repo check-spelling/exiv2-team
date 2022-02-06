@@ -32,7 +32,7 @@ $USAGE
 HardFeed copies all of the contents of a remote directory to the current 
 directory using ftp.  It establishes an ftp connection to the remote 
 site and it uses the ftp command \"ls\" to get a listing of the remote
-directory.  The two required parameters are the remote sytstem and the user
+directory.  The two required parameters are the remote system and the user
 name.  The optional third parameter is the remote directory to copy.  The 
 default is just the home directory of the ftp account.
 
@@ -201,7 +201,7 @@ else
 fi
 
 #
-#  Max time to wait for arrivial of file.  This is a long time.  During
+#  Max time to wait for arrival of file.  This is a long time.  During
 #  an interactive run, the user can use SIGINT if it seems to be taking
 #  too long.  This max is intended to assure that a cron job will not
 #  hang forever.

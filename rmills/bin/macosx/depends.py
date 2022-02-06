@@ -1,7 +1,7 @@
 #!/usr/bin/python
 from __future__ import print_function
 
-r"""depends.py - find the ordered dependancies of a library/executable (deepest first)
+r"""depends.py - find the ordered dependencies of a library/executable (deepest first)
 
 To use this:
 	depends.py [options]+ <pathtolibrary/pathtoexecutable/pathotoapp>
@@ -51,7 +51,7 @@ def depend(execdir,loaddir,libname,dependdict):
 	if os.path.isfile(libpath):
 		if not dependdict.has_key(libpath):
 			dependdict[libpath]=Set([])                 # push now to prevent infinite loop in recursion
-			cmd = 'otool -L "%s"' % libpath         	# otool -L prints library dependancies:
+			cmd = 'otool -L "%s"' % libpath         	# otool -L prints library dependencies:
 														# libpath:
 														# <tab>dependency (metadata) ...
 			if options.verbose or options.dryrun:
@@ -60,7 +60,7 @@ def depend(execdir,loaddir,libname,dependdict):
 				if line[:1]=='\t':                      # parse <tab>dependency (metadata)
 					dependency=line.split()[0]
 					# print libpath,' => ',dependency
-					# recurse to find dependancies of dependency
+					# recurse to find dependencies of dependency
 					dpath=depend(execdir,loaddir,dependency,dependdict)
 					dependdict[libpath].add(dpath)      # update dependdict from recursion
 	else:
@@ -91,7 +91,7 @@ def deploy(execdir,loaddir,libname):
 	libpath=os.path.abspath(libname)
 
 	if os.path.isfile(libpath):
-		cmd = 'otool -L "%s"' % libpath         	# otool -L prints library dependancies:
+		cmd = 'otool -L "%s"' % libpath         	# otool -L prints library dependencies:
 													# libpath:
 											 		# <tab>dependency (metadata) ...
 		for line in os.popen(cmd).readlines():      # run cmd
@@ -180,7 +180,7 @@ def main():
 	parser.add_option('-V', '--version'		, action='store_true' , dest='version' ,help='report version'     )
 	parser.add_option('-v', '--verbose'		, action='store_true' , dest='verbose' ,help='verbose output'	  )
 	parser.add_option('-d', '--deploy'		, action='store_true' , dest='deploy'  ,help='update the bundle'  )
-	parser.add_option('-D', '--depends'	    , action='store_true' , dest='depends' ,help='report dependancies')
+	parser.add_option('-D', '--depends'	    , action='store_true' , dest='depends' ,help='report dependencies')
 	parser.add_option('-X', '--dryrun'	    , action='store_true' , dest='dryrun'  ,help='do not execute commands')
 	parser.add_option('-q', '--qt'	        , action='store'      , dest='qt'      ,help='qt directory'       ,default = os.environ['HOME']+'/Qt/5.9/clang_64/lib')
 

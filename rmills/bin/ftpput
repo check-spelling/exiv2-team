@@ -9,7 +9,7 @@
 # * Purpose:
 #   FTP put utility
 # 
-# * Useage :
+# * Usage :
 #   ftpput host remotepath localpath [[user] [password] [-testlength]]
 #
 #   user/password = anonymous/ftpput.pl if omitted
