@@ -203,7 +203,7 @@ def getProxyDivision( file, resX, resY, proxyDivision ):
 		#Image is landscape
 		if resX >= targetRes:
 			proxyDivision = float(resX) / float(targetRes)
-			#print "proxyDiviosn is: " + str(proxyDivision)
+			#print "proxyDivision is: " + str(proxyDivision)
 			return proxyDivision 
 		else:
 			proxyDivision = 1
@@ -213,7 +213,7 @@ def getProxyDivision( file, resX, resY, proxyDivision ):
 		#Image is portrait
 		if resY >= targetRes:
 			proxyDivision = float(resY) / float(targetRes)
-			#print "proxyDiviosn is: " + str(proxyDivision)
+			#print "proxyDivision is: " + str(proxyDivision)
 			return proxyDivision
 		else:
 			proxyDivision = 1
