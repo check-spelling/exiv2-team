@@ -71,7 +71,7 @@ Changes from version 0.26 to 0.27
 	- <a href="http://dev.exiv2.org/issues/0001310">0001310</a>:	Provide support for msys/2.0
 	- <a href="http://dev.exiv2.org/issues/0001299">0001299</a>:	exiv2-0.26-trunk.tar.gz changed on download server
 				(Jonathan Riddell)
-	- <a href="http://dev.exiv2.org/issues/0001270">0001270</a>:	Using libexiv2.a/.lib  in multhreaded app segfaults.
+	- <a href="http://dev.exiv2.org/issues/0001270">0001270</a>:	Using libexiv2.a/.lib  in multithreaded app segfaults.
 				(Ben Touchette)
 	- <a href="http://dev.exiv2.org/issues/0001237">0001237</a>:	Report CMake/MinGW issues to Kitware
 	- <a href="http://dev.exiv2.org/issues/0001188">0001188</a>:	Provide build support for C++11
