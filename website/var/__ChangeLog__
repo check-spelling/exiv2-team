@@ -1019,7 +1019,7 @@ Changes from version 0.23 to 0.24
 	           (Reported by S. Verdoold, patch by Pascal de Bruijn)
 	- <a title="bug 0000861" href="http://dev.exiv2.org/issues/0000861">0000861</a>: Sigma 18-250mm not properly recognised on Pentax
 	           (Reported by S. Verdoold, patch by Pascal de Bruijn)
-	- <a title="bug 0000862" href="http://dev.exiv2.org/issues/0000862">0000862</a>: Video code is failing the test suite (on all plaforms)
+	- <a title="bug 0000862" href="http://dev.exiv2.org/issues/0000862">0000862</a>: Video code is failing the test suite (on all platforms)
 	           (Robin Mills, Abhinav Badola)
 	- <a title="bug 0000865" href="http://dev.exiv2.org/issues/0000865">0000865</a>: Patches for locale and boost issue (Patches by Mario anyc)
 	- <a title="bug 0000868" href="http://dev.exiv2.org/issues/0000868">0000868</a>: Support for two lens for sony mount
