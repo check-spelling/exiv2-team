@@ -260,7 +260,7 @@ sub get_cli_opts {
     return 0  unless
     GetOptions(
 	"bare",		# Leave out HTML, HEAD, BODY tags.
-	"belem=s",	# HTML Element for overstriked text (def: "B")
+	"belem=s",	# HTML Element for overstruck text (def: "B")
 	"botm=i",	# Number of lines for bottom margin (def: 7)
 	"cgiurl=s",	# CGI URL for linking to other manpages
 	"cgiurlexp=s",	# CGI URL Perl expr for linking to other manpages
@@ -273,7 +273,7 @@ sub get_cli_opts {
 	"pgsize=i",	# Number of lines in a page (def: 66)
 	"seealso",	# Link to other manpages only in the SEE ALSO section
 	"solaris",	# Parse 'man -k' output from a solaris system
-	"sun",		# Section heads are not overstriked in input
+	"sun",		# Section heads are not overstruck in input
 	"title=s",	# Title of manpage (def: Not defined)
 	"topm=i",	# Number of lines for top margin (def: 7)
 	"uelem=s",	# HTML Element for underlined text (def: "I")
@@ -402,8 +402,8 @@ sub htmlize2 {
 }
 
 ##---------------------------------------------------------------------------
-##	strike converts HTML special characters in overstriked text
-##	into entity references.  The entities are overstriked so
+##	strike converts HTML special characters in overstruck text
+##	into entity references.  The entities are overstruck so
 ##	strongize() and emphasize() will recognize the entity to be
 ##	wrapped in tags.
 ##
@@ -572,7 +572,7 @@ sub usage {
 Usage: $PROG [ options ] < infile > outfile
 Options:
   -bare            : Do not put in HTML, HEAD, BODY tags
-  -belem <elem>    : HTML Element for overstriked text (def: "B")
+  -belem <elem>    : HTML Element for overstruck text (def: "B")
   -botm <#>        : Number of lines for bottom margin (def: 7)
   -cgiurl <url>    : URL for linking to other manpages
   -cgiurlexp <url> : Perl expression URL for linking to other manpages
@@ -586,7 +586,7 @@ Options:
   -pgsize <#>      : Number of lines in a page (def: 66)
   -seealso         : Link to other manpages only in the SEE ALSO section
   -solaris         : Process keyword search result in Solaris format
-  -sun             : Section heads are not overstriked in input
+  -sun             : Section heads are not overstruck in input
   -title <string>  : Title of manpage (def: Not defined)
   -topm <#>        : Number of lines for top margin (def: 7)
   -uelem <elem>    : HTML Element for underlined text (def: "I")
