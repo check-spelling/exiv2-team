@@ -236,7 +236,7 @@ def gps():
 		file.close()
 		dom = xml.dom.minidom.parseString(data)
 
-		# read the XML with and without the namepace
+		# read the XML with and without the namespace
 		handleGPX(dom,timedict,False)
 		handleGPX(dom,timedict,ns)
 			
