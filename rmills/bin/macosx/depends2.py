@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-r"""depends.py - find the depenancies of a library
+r"""depends.py - find the dependencies of a library
 
 To use this:
 	depends.py <pathtolibrary>
@@ -75,7 +75,7 @@ def depend(libname,dependdict,executable_path=False):
 			
 		if not dependdict.has_key(libname):
 			dependdict[libname]=libname # result
-			cmd = 'otool -L "%s"' % libname              # otool -L tells us the dependancies of this library
+			cmd = 'otool -L "%s"' % libname              # otool -L tells us the dependencies of this library
 			executable_path=os.path.dirname(executable_path)
 
 			for line in os.popen(cmd).readlines():       # run find command
@@ -107,7 +107,7 @@ def tsort(dict):
 	filename='/tmp/tsortXX.txt'
 	file=open(filename,'w')
 	for key in dict.keys():
-		cmd = 'otool -L "%s"' % key		         		# otool -L tells us the dependancies of this library
+		cmd = 'otool -L "%s"' % key		         		# otool -L tells us the dependencies of this library
 
 		for line in os.popen(cmd).readlines():      # run find command
 			mylist = string.split(line)
