@@ -5380,7 +5380,7 @@ The system test suite
 
 positional arguments:
   dir_or_file           root directory under which the testsuite searches for tests or asingle file which tests are run (defaults to the config
-                        file'slocation)
+                        file's location)
 
 optional arguments:
   -h, --help            show this help message and exit
