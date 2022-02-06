@@ -1415,7 +1415,7 @@ void IFD::visitMakerNote(Visitor& visitor,DataBuf& buf,uint64_t count,uint64_t o
         default           : /* do nothing */ ; break;
 
         case kNikon       : {
-                // MakerNote is embeded tiff `II*_....` 10 bytes into the data!
+                // MakerNote is embedded tiff `II*_....` 10 bytes into the data!
                 size_t        punt = buf.strequals("Nikon") ? 10 : 0 ;
                 if ( bAdobe ) punt = 30              ;  // Adobe_MakN_.Q.II__..Nikon_..__II*_.___?_
                 Io     io(io_,offset+punt,count-punt);

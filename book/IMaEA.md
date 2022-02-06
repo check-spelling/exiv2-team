@@ -3056,7 +3056,7 @@ MakerNotes are usually written as an IFD, however most manufacturers have extra 
 void IFD::visitMakerNote(Visitor& visitor,DataBuf& buf,uint16_t count,uint32_t offset)
 {
     if ( image_.maker_ == kNikon ) {
-        // Nikon MakerNote is embeded tiff `II*_....` 10 bytes into the data!
+        // Nikon MakerNote is embedded tiff `II*_....` 10 bytes into the data!
         size_t punt = buf.strequals("Nikon") ? 10
                     : 0
                     ;
