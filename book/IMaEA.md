@@ -2848,7 +2848,7 @@ I believe the data is defined in the Standard ISO/IEC 2022.  The following web p
 
 ### IPTC Extended Blocks
 
-As with Exif metdata, the IPTC data block can exceed 64k byte and this cannot be stored in a single JPEG segment.  Exiv2 has code to deal with this and is documented here: [https://dev.exiv2.org/issues/0000533](https://dev.exiv2.org/issues/0000533)
+As with Exif metadata, the IPTC data block can exceed 64k byte and this cannot be stored in a single JPEG segment.  Exiv2 has code to deal with this and is documented here: [https://dev.exiv2.org/issues/0000533](https://dev.exiv2.org/issues/0000533)
 
 ### IPTC in Tiff and other formats.
 
@@ -3086,7 +3086,7 @@ Because the manufacturers store their data as an embedded IFD or Tiff file, tvis
 <div id="2-6"/>
 ## 2.6 Metadata Convertors
 
-Exiv2 has code to convert data between different Metdata standards.  Generally when you update Exif metadata, equivalent modifications will be performed on the IPTC and XMP metadata.  I can't explain why this code was added to Exiv2 and, while it may be convenient and invisible in its operation, it also has undesirable side effects.
+Exiv2 has code to convert data between different Metadata standards.  Generally when you update Exif metadata, equivalent modifications will be performed on the IPTC and XMP metadata.  I can't explain why this code was added to Exiv2 and, while it may be convenient and invisible in its operation, it also has undesirable side effects.
 
 If Exiv2 is ever rewritten, the decision to keep this capability should be carefully reviewed.  I think it would be better to not have this at all and leave library users to provide this in their application code.
 
@@ -4199,7 +4199,7 @@ The reason for using memory mapped files was for the convenience of converting o
 
 ### Writing Files
 
-Exiv2 is very reliable at writing files which conform to standards.  The way in which this is achieved is to by calling image->writeMetata() which delegates to the handlers writeMetata().
+Exiv2 is very reliable at writing files which conform to standards.  The way in which this is achieved is to by calling image->writeMetadata() which delegates to the handlers writeMetadata().
 
 Because the handler understands the structure of the image, it writes a temporary in memory copy of the image.  It proceeds to parse the image and copy the data to the temporary file.  When it arrives at each of the four metadata blocks (Exif, ICC, IPTC and XMP) it calls the serializer to create a buffer of data which is injected into the temporary image.  When it arrives the EOF on the original file, if no error has been detected it calls io->transfer() on the temporary image.  The operation transfer() copies the bytes from the temporary stream to the permanent file.
 
@@ -4392,7 +4392,7 @@ To delete metadata, you have to locate the key in the ExifData vector and erase 
       exifData.erase(pos);
 ```
 
-#### Writing modified metada to storage
+#### Writing modified metadata to storage
 
 When you modify metadata using the variable _image_, you are only changing it in memory.  You commit the changes to storage when you call image->writeMetadata().
 
