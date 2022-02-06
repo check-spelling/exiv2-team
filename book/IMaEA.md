@@ -8,7 +8,7 @@
 <div id="dedication"/>
 ## _Dedication and Acknowledgment_
 
-_I want to say <b>Thank You</b> to a few folks who have made this book possbile._
+_I want to say <b>Thank You</b> to a few folks who have made this book possible._
 
 _First, my wife Alison, who has been my loyal supporter since the day we met in High School in 1967._
 
