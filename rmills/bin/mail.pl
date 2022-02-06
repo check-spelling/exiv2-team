@@ -694,7 +694,7 @@ a mail transfer agent, possibly on a different machine.
 
 This script will wait on STDIN (as does /bin/mail) for
 some text to be used as the first (textual) message body
-part.  Unlike /bin/mail, this behavior may be overriden
+part.  Unlike /bin/mail, this behavior may be overridden
 by use of switch w.  Failure to provide a Subject: on 
 the command line does NOT result in the user being asked
 for one (this also differs from /bin/mail).
