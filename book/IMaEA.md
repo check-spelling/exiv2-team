@@ -1238,7 +1238,7 @@ END: ../files/cr3.cr3
 
 I believe HEIC and AVIF are very similar.  However the codec used in AVIF/mdat is royalty free.  The HEIC/mdat codec is proprietary.  From a metadata standpoint, there's no apparent difference.  The term HEIC is the container for such images.  HEIF is the title of the codec technology.
 
-Apple were the first to introduce HEIC files on the iOS devices about 2015.  Canon have released cameras with the option to store HEIC.  I believe this is an honest effort by Canon to move on from JPEG. Will this be a market success?  We don't know yet.  Thanks to Gordon Laing, I have obtained several Canon genenerated HEIC files and I'm very pleased to say that tvisitor required no modification to read the metadata.  Thank You, Gordon:  [https://www.cameralabs.com/tag/heif/](https://www.cameralabs.com/tag/heif/)
+Apple were the first to introduce HEIC files on the iOS devices about 2015.  Canon have released cameras with the option to store HEIC.  I believe this is an honest effort by Canon to move on from JPEG. Will this be a market success?  We don't know yet.  Thanks to Gordon Laing, I have obtained several Canon generated HEIC files and I'm very pleased to say that tvisitor required no modification to read the metadata.  Thank You, Gordon:  [https://www.cameralabs.com/tag/heif/](https://www.cameralabs.com/tag/heif/)
 
 To understand how to parse HEIC and AVIF, we have to discuss the specification of more boxes.
 
