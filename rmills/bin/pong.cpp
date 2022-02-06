@@ -421,7 +421,7 @@ int LookupHostAddress(const char* HostToPing, struct sockaddr_in* HostAddress)
         return(EINVAL); //invalid argument error return
     }
 
-    //Initalizing host address
+    //Initializing host address
     memset(HostAddress, 0, sizeof(struct sockaddr_in));
 
     /* Calling inet_addr to try to interpret the input address as a 
