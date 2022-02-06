@@ -728,7 +728,7 @@ Provide the name of the SMTP mailhost used to route SMTP mail.
 If this flag is set, the message provided must contain additional
 headers followed by a blank line and a message body.  It can be
 used to write additional headers into a message.  If you use this
-option, you must provide the blank line separarting headers and body!
+option, you must provide the blank line separating headers and body!
 
 =item B<-w> (No STDIN)
 
