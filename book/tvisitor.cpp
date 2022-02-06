@@ -800,7 +800,7 @@ enum kCanonType
 ,   kTC_CameraObject    = 0x0007|kcHTP1
 ,   kTC_ShootingRecord  = 0x0002|kcHTP2
 ,   kTC_MeasuredInfo    = 0x0003|kcHTP2
-,   kTC_CameraSpecificaiton= 0x0004|kcHTP2
+,   kTC_CameraSpecification= 0x0004|kcHTP2
 };
 
 // TagDict is used to map tag (uint16_t) to string
