@@ -6592,7 +6592,7 @@ I abandoned Jenkins for several reasons:
 3. I didn't understand how to trigger Jenkins from GitHub.
 4. I didn't like the Cygwin ssh server which runs the bash shell.
 
-I decided to forget about Jenkins and focus on the ssh script.  So build.sh, parses its command arguments, writes the build script and transfers it by ssh to the appropriate VM.  On the machine, rmillsmm, I have VM such as rmillsmm-w10, rmillsmm-ubuntu, rmillsmm-solaris and so on.  On Windows, I use the excellant bitvise ssh server and the native server on other platforms.
+I decided to forget about Jenkins and focus on the ssh script.  So build.sh, parses its command arguments, writes the build script and transfers it by ssh to the appropriate VM.  On the machine, rmillsmm, I have VM such as rmillsmm-w10, rmillsmm-ubuntu, rmillsmm-solaris and so on.  On Windows, I use the excellent bitvise ssh server and the native server on other platforms.
 
 Bitvise is a very solid server.  https://www.bitvise.com/ssh-server.  It can be configured for a variety of shells.  I use cmd.exe to build on Visual Studio or Cygwin/64 or MinGW/msys2/mingw64.  ./build.sh invokes the batch files cmd64.bat, cygwin64.bat or msys64.bat to configure the environment on the build machine.  These scripts are discussed and documented in README.md.
 
