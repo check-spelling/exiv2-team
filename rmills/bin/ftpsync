@@ -396,7 +396,7 @@ sub buildremotetree() {
         if ($dodebug) { print "File: ".$curnewrf."\n"; }
         elsif ($doverbose gt 1) { print "."; }
       }
-      elsif (! $doquiet) { print "Unkown file: $curlsline\n"; }
+      elsif (! $doquiet) { print "Unknown file: $curlsline\n"; }
     }
     elsif ($dodebug) { print "Ignoring.\n"; }
   }
