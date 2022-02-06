@@ -466,9 +466,9 @@ Changes from version 0.25 to 0.26
 	- <a href="http://dev.exiv2.org/issues/0001145">0001145</a>:	Respect Sony/Minolta lenses with shared LensID such as Tamron SP AF 17-50mm F2.8 XR Di II LD
 	- <a href="http://dev.exiv2.org/issues/0001144">0001144</a>:	Sigma 10-20mm f/4-5.6 EX DC is detected as Tamaron
 				(Simon Harhues)
-	- <a href="http://dev.exiv2.org/issues/0001142">0001142</a>:	Manual lens does not get recogniced: Beroflex zoom 500mm
+	- <a href="http://dev.exiv2.org/issues/0001142">0001142</a>:	Manual lens does not get recognized: Beroflex zoom 500mm
 				(Simon Harhues / Niels Kristian Bech Jensen)
-	- <a href="http://dev.exiv2.org/issues/0001141">0001141</a>:	Manual lens does not get recogniced: Pentax macro 100mm
+	- <a href="http://dev.exiv2.org/issues/0001141">0001141</a>:	Manual lens does not get recognized: Pentax macro 100mm
 				(Simon Harhues / Niels Kristian Bech Jensen)
 	- <a href="http://dev.exiv2.org/issues/0001118">0001118</a>:	Add support for ZEISS Loxia 2/50 lens
 				(Eugen Neu)
