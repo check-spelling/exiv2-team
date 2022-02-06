@@ -92,7 +92,7 @@ def s(angle):
 ##
 # dictionary search (closest match)
 def search(dict,target):
-	"""search(dict,taget) - search for closest match"""
+	"""search(dict,target) - search for closest match"""
 	s	 = sorted(dict.keys())
 	N	 = len(s)
 	low	 = 0
