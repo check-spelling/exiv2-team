@@ -456,7 +456,7 @@ sub make_xref {
 ##---------------------------------------------------------------------------
 ##	man_k() process a keyword search.  The problem we have is there
 ##	is no standard for keyword search results from man.  Solaris
-##	systems have a different enough format to warrent dealing
+##	systems have a different enough format to warrant dealing
 ##	with it as a special case.  For other cases, we try our best.
 ##	Unfortunately, there are some lines of results that may be
 ##	skipped.
