@@ -3390,7 +3390,7 @@ void ReportVisitor::visitChunk(Io& io,Image& image,uint64_t address
     IoSave save(io,address+8);
     if ( isBasicOrRecursive() ) {
         {   IoSave    restore(io);
-            DataBuf   data(length > 40 ? 40 : length ); // read enougth data for reporting purposes
+            DataBuf   data(length > 40 ? 40 : length ); // read enough data for reporting purposes
             io.read(data);
             out() << indent() << stringFormat(" %8d |  %s | %7d | %#10x | ",address,chunk,length,chksum);
             out() << data.toString(kttUndefined,data.size_,image.endian());
