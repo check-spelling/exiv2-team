@@ -5462,7 +5462,7 @@ The unit tests are built into a single executable bin/unit_tests(.exe)
 <div id="8-4"/>
 # 8.4 Version Test
 
-The version test is _more-or-less_ the output of the command _$ exiv2 --verbose --version_ which produces about 150 lines of output.  About 60 lines of the output are a list of pre-registed XMP namespaces and of little interest.  So, the script test/version-test.sh counts and filters out the XMP namespaces.
+The version test is _more-or-less_ the output of the command _$ exiv2 --verbose --version_ which produces about 150 lines of output.  About 60 lines of the output are a list of pre-registered XMP namespaces and of little interest.  So, the script test/version-test.sh counts and filters out the XMP namespaces.
 
 ```bash
 #!/usr/bin/env bash
