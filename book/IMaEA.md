@@ -6035,7 +6035,7 @@ Something has to change and here are some ideas about funding and recognition.
 
 1. GSoC give students a bounty.  That program could be duplicated by Adobe, Facebook, Microsoft, Apple and other Tech Giants.
 2. Large organizations could make donations to a foundation from which projects could apply for grants.
-3. Github could carry ads and share the revenue with open source projects.
+3. GitHub could carry ads and share the revenue with open source projects.
 4. A federal program like Darpa.
 5. Community recognition like the oscar or grammy awards.
 
