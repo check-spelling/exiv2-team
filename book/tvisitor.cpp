@@ -1541,7 +1541,7 @@ public:
 
         IoSave  restore(io(),0);
         bool    result = false;
-        DataBuf buf(2+4+8); //xxlongHEAPCCRD xx = II or MM
+        DataBuf buf(2+4+8); //xxlongHEAPCCDR xx = II or MM
         if ( io().good() ) {
             io().read(buf);
 
