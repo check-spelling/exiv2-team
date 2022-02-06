@@ -84,7 +84,7 @@ function check_is_duplicate_others {
     application_check1=`defaults read com.apple.dock persistent-others | grep -w _CFURLString | awk 'BEGIN { FS = "\"" } ; { print $4 }' | grep -x "${item2add}"`
     application_check2=`defaults read com.apple.dock persistent-others | grep -w _CFURLString | awk 'BEGIN { FS = "\"" } ; { print $4 }' | grep -x "${item2add}/"`
     if [ "${application_check1}" != "" ] || [ "${application_check2}" != "" ] ; then
-        echo "WANRING! : Item is already in the dock, it will not be added again : ${item2add}"
+        echo "WARNING! : Item is already in the dock, it will not be added again : ${item2add}"
         # This item is in the dock
         return 1
     else
