@@ -723,7 +723,7 @@ void parse_foveon()
 	      type = sget4(cp);
 	      ndim = sget4(cp+4);
 	      dim[0] = dim[1] = dim[2] = 1;
-	      printf ("%d-dimensonal array %s of type %d:\n    Key: (",
+	      printf ("%d-dimensional array %s of type %d:\n    Key: (",
 		ndim, pos+sget4(pos+12), sget4(cp));
 	      dp = pos + sget4(cp+8);
 	      for (i=ndim; i--; ) {
