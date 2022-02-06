@@ -5263,7 +5263,7 @@ def reportTest(r,t):
 	good = True
 	R=chop(open('data/%s.out' % t ,'rb').read())
 	if len(R) != len(r):
-		error('output length mismatch Referance %d Test %d' % (len(R),len(r)))
+		error('output length mismatch Reference %d Test %d' % (len(R),len(r)))
 		good=False
 	else:
 		i = 0
