@@ -4978,7 +4978,7 @@ const TiffTreeStruct TiffCreator::tiffTreeStruct_[] = {
     { Tag::root, ifd0Id,           ifdIdNotSet,      Tag::root },
 ```
 
-This is a state table used to navigate the metadata heirachy.  For example, starting at root, the first IFD wil create a new TiffDirectory and sets the state to ifd0Id.  When tag 0x8769 is encountered, the parser will create new TiffDirectory and the state becomes exifId.
+This is a state table used to navigate the metadata hierarchy.  For example, starting at root, the first IFD wil create a new TiffDirectory and sets the state to ifd0Id.  When tag 0x8769 is encountered, the parser will create new TiffDirectory and the state becomes exifId.
 
 The "route" from the start of parsing (ifdIdNotSet), via the Tiff-EP tags (ifd0Id), via ExifTag/0x8769, to the MakerNote/0x927c, to the NikonPicture control is:
 
