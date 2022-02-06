@@ -2130,7 +2130,7 @@ There is no Exiv2, xmp, ICC or IPTC metadata in a TGA file.
 
 The Windows Bitmap Format "Bimp" has been around in Windows forever.  It may even have been in Windows 1.0.  For sure, it was there when I started to working with Windows 3.0 in 1991.  It's not a container.  It's a few fields of data and lots of pixels!
 
-BMP is often referred to as a "device independant bitmap" because it's not designed for any physical device.  It is the responsibility of the device or printer driver to render the image.  Windows device drivers are required to implement the GDI (Graphical Device Interface).
+BMP is often referred to as a "device independent bitmap" because it's not designed for any physical device.  It is the responsibility of the device or printer driver to render the image.  Windows device drivers are required to implement the GDI (Graphical Device Interface).
 
 The first 4 bytes of the BITMAP (following the 14 byte file BITMAPFILE header) is the length of BITMAP.   As well as being useful for navigating the file, this is effectively the BITMAP version.  In the Windows SDK, they call it bmType.  The last time I looked at the structure of a BMP (Windows 95) it believe it was 42 bytes.  On Windows 10 it's now 124.
 
@@ -5151,7 +5151,7 @@ In writing this book, I want to avoid duplicating information from the Exiv2 doc
 <div id="8-1"/>
 # 8.1 Bash Tests
 
-As the name implies, these tests were originally implemented as bash scripts.  They started life as a collection of independant scripts which were written by different contributors.  Although they all shared the goal of executing a command and comparing the output to a referenced file, there was no shared code.  About 2012, I refactored the tests and put common code into test/functions.source.  All bash tests begin by sourcing this file which performs environment checks, initialises bash variables and sets up bash functions such as copyTestFiles, runTest and reportTest.
+As the name implies, these tests were originally implemented as bash scripts.  They started life as a collection of independent scripts which were written by different contributors.  Although they all shared the goal of executing a command and comparing the output to a referenced file, there was no shared code.  About 2012, I refactored the tests and put common code into test/functions.source.  All bash tests begin by sourcing this file which performs environment checks, initialises bash variables and sets up bash functions such as copyTestFiles, runTest and reportTest.
 
 ```bash
 #!/usr/bin/env bash
@@ -6010,7 +6010,7 @@ There are ways to fix on-line abuse.  We could do what the Fuzzing Police do.  T
 
 The Community would be well served by a similar task force to investigate complaints about the behaviour of stakeholders and maintainers.  There are undoubtably stakeholders who would report me.  However I would be able to complain about a stakeholder if I felt they had behaved inappropriately.
 
-For sure, I would not welcome my performance being reviewed.  However a fair, honest and independant review of an issue would be helpful.  The stakeholder and I would shake hands and learn from the situation.  If the stakeholder or maintainer do not attend the review, their github account should be suspended.
+For sure, I would not welcome my performance being reviewed.  However a fair, honest and independent review of an issue would be helpful.  The stakeholder and I would shake hands and learn from the situation.  If the stakeholder or maintainer do not attend the review, their github account should be suspended.
 
 Another possible solution would be to register a complaint about an individual.  In the same way as a bug report can be opened on a project, it would be helpful to open a complaint about an individual.  And that complaint can only be closed by the person who opened it.  I suspect, we'd quickly discover two things:
 
