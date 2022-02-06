@@ -570,7 +570,7 @@ int CreateSocketForCommunicationWithHost(const struct sockaddr_in HostAddress, i
     /* Now that we have the socket created we want to set the timeout on the socket.  This is
      * the time a ping request will wait before assuming failure.  Here we use the value which 
      * is passed to us as the timeout value.  We set the timeout by setting the timeout for
-     * recieve requests on the socket using setsockopt.
+     * receive requests on the socket using setsockopt.
      * First Argument: The socket we are editing the receive timeout.  In this case
      *    the socket we just created.  This timeout will end up being the time ping waits for a response.
      * Second Argument: UNIX constant SOL_SOCKET indicating we are editing a socket level
@@ -583,7 +583,7 @@ int CreateSocketForCommunicationWithHost(const struct sockaddr_in HostAddress, i
      * Return Value: There is actually a return value of zero on success and -1 on failure.
      */
 
-    //Setting the ping timeout to one second.  This way a recieve call will timeout after 1 
+    //Setting the ping timeout to one second.  This way a receive call will timeout after 1 
     //second later on.  This saves us from having to use UNIX signal alarms for timeouts
     pingTimeout.tv_sec = 1;
     pingTimeout.tv_usec = 0;
@@ -647,7 +647,7 @@ int CreateAndSendICMPPacket(struct sockaddr_in HostAddress, int SequenceNumber, 
 
     /* Now we will get time of day so we can add it to the "extra" data on the ICMP packet.
      * The time of day will allow us to calculate the round trip time on the ping upon
-     * recieveing the echo packet
+     * receiveing the echo packet
      */
     error = gettimeofday(&PacketToSend.packetTimeStamp, NULL);
     
