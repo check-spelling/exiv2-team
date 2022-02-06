@@ -622,7 +622,7 @@ Changes from version 0.25 to 0.26
 
 * Testing: (6)
 	- <a href="http://dev.exiv2.org/issues/0001230">0001230</a>:	Bug Hunt for v0.26
-	- <a href="http://dev.exiv2.org/issues/0001207">0001207</a>:	digiKam maintenance tool to synchronize files metadata and database crash in Exiv2 (re-entrancy issue ?)
+	- <a href="http://dev.exiv2.org/issues/0001207">0001207</a>:	digiKam maintenance tool to synchronize files metadata and database crash in Exiv2 (reentrancy issue ?)
 				(Uwe Haider)
 	- <a href="http://dev.exiv2.org/issues/0001057">0001057</a>:	Implement target/modifier - (stdin/stdout) for exiv2 options -i (insert) and -e (extract)
 	- <a href="http://dev.exiv2.org/issues/0001045">0001045</a>:	Add COPYRIGHT file to test/data/
