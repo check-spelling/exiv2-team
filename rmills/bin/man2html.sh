@@ -135,7 +135,7 @@ $txsz      = 52;	# Text body length size
 sub do_it {
 
     ##	Define while loop and then eval it when used.  The reason
-    ##	is to avoid the regular expression reevaulation in the
+    ##	is to avoid the regular expression reevaluation in the
     ##	section head detection code.
 
     $doitcode =<<'EndOfDoItCode';
