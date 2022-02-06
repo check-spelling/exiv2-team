@@ -99,7 +99,7 @@ The build command is:
 You only configure the Mac because build.sh performs the builds over ssh.
 Jenkins does not know about the Windows and Linux servers.
 
-The 'master' (rmillsmm) should have the labels macos linux cygwin mingw mingw msvc
+The 'master' (rmillsmm) should have the labels macos linux cygwin mingw msvc
 Launch method: "Launch agent agents via SSH"
 Host: rmillsmm
 Credentials: rmills/********
