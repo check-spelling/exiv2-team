@@ -151,7 +151,7 @@ I intended to make a proposal at LGM in Rennes in May 2020 concerning this matte
 
 In this way, new lens definitions can be written in M2Lscript without touching anything in Exiv2 or ExifTool.
 
-I will not be able to work on both Exiv2 and M2Lscript simulateously.  When a new maintainer takes responsibility for Exiv2, I will retire.  M2Lscript would be my swansong technology project.  However, the C-19 crisis postponed LGM in 2020 and 2021.  I don't have the energy to continue with open-source. This book is my final contribution.
+I will not be able to work on both Exiv2 and M2Lscript simultaneously.  When a new maintainer takes responsibility for Exiv2, I will retire.  M2Lscript would be my swansong technology project.  However, the C-19 crisis postponed LGM in 2020 and 2021.  I don't have the energy to continue with open-source. This book is my final contribution.
 
 [TOC](#TOC)
 <div id="scope"/>
