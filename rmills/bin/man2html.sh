@@ -92,7 +92,7 @@ $OutFH	= \*STDOUT  unless $OutFH;
 ## Fallback tag if above is not found
 $HeadFallback = '<H2>';
 
-## Other gobals
+## Other globals
 
 $Bare      = 0;		# Skip printing HTML head/foot flag
 $BTag	   = 'B';	# Overstrike tag
