@@ -22,7 +22,7 @@
 #
 #    -m           Return the mask that will be used, ignore photo argument
 #    -mp          Preserve the input mask as is, don't trim or adjust its size
-#    -ms size     Trim/expand mask to fit the size given, with peice centered
+#    -ms size     Trim/expand mask to fit the size given, with piece centered
 #                 Warning: mask should include enough space for any effects
 #
 #    -l           Add an outline along edge of piece
