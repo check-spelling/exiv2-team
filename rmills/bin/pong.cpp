@@ -647,7 +647,7 @@ int CreateAndSendICMPPacket(struct sockaddr_in HostAddress, int SequenceNumber, 
 
     /* Now we will get time of day so we can add it to the "extra" data on the ICMP packet.
      * The time of day will allow us to calculate the round trip time on the ping upon
-     * receiveing the echo packet
+     * receiving the echo packet
      */
     error = gettimeofday(&PacketToSend.packetTimeStamp, NULL);
     
