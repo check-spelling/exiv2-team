@@ -184,7 +184,7 @@ do
 
 done
 
-# Restarts the Dock (any user modifiacation to the dock will be lost unless they have been saved)
+# Restarts the Dock (any user modification to the dock will be lost unless they have been saved)
 killall Dock
 
 exit_now
