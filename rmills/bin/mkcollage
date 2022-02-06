@@ -175,7 +175,7 @@ if ( $verbose ) {
 }
 
 ##
-# save thumnail
+# save thumbnail
 my $thumbname = $name . '.jpg';
 $thumb->write(file=>$thumbname,jpegquality => $quality) or die $thumb->errstr;
 
