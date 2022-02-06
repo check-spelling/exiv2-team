@@ -503,7 +503,7 @@ int LookupHostAddress(const char* HostToPing, struct sockaddr_in* HostAddress)
 int CreateSocketForCommunicationWithHost(const struct sockaddr_in HostAddress, int* SocketToReturn)
 {
     struct protoent* 	protocolInformation;
-    const int krecieveSocketBufferSize = 50 * 1024; //here we want 50K for size of receive buffer
+    const int kreceiveSocketBufferSize = 50 * 1024; //here we want 50K for size of receive buffer
     struct timeval pingTimeout;
     int error = 0;
 
@@ -564,7 +564,7 @@ int CreateSocketForCommunicationWithHost(const struct sockaddr_in HostAddress, i
      *    the buffer size but its not required.
      */
     (void) setsockopt(*SocketToReturn, SOL_SOCKET, SO_RCVBUF, 
-                        &krecieveSocketBufferSize, sizeof(krecieveSocketBufferSize));
+                        &kreceiveSocketBufferSize, sizeof(kreceiveSocketBufferSize));
     
 
     /* Now that we have the socket created we want to set the timeout on the socket.  This is
