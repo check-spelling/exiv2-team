@@ -5411,7 +5411,7 @@ The command: `$ make tests` executes the command `$ cd tests ; python3 runner.py
 <div id="8-3"/>
 # 8.3 Unit Test
 
-The unit tests are very useful for testing C++ functions with a well defined input and output.  In Chemistry, we have elements and compounds.  The unit tests are good for testing elements of the software.  The unit tests are written in C++ and use the Google Test library.  Here's a typical test progam, extracted from unitTests/test_futils.cpp
+The unit tests are very useful for testing C++ functions with a well defined input and output.  In Chemistry, we have elements and compounds.  The unit tests are good for testing elements of the software.  The unit tests are written in C++ and use the Google Test library.  Here's a typical test program, extracted from unitTests/test_futils.cpp
 
 ```cpp
 #include <exiv2/exiv2.hpp>
