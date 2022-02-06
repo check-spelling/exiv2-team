@@ -594,7 +594,7 @@ void parse_mos(int level)
     fread (data, 1, 40, ifp);
     skip = get4();
     printf ("%s %d bytes: ", data, skip);
-    if (!strcmp(data,"pattern_ratation_angle")) {
+    if (!strcmp(data,"pattern_rotation_angle")) {
       printf ("%d\n", get2());
       continue;
     }
