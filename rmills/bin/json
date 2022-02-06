@@ -1550,7 +1550,7 @@ function main(argv) {
         }
 
         // Process: lookups
-        var lookupsAreIndeces = false;
+        var lookupsAreIndices = false;
         if (lookups.length) {
             if (opts.array) {
                 if (!Array.isArray(data)) data = [data];
@@ -1569,16 +1569,16 @@ function main(argv) {
                 }
                 data = table;
             } else {
-                // Special case handling: Note if the 'lookups' are indeces into
+                // Special case handling: Note if the 'lookups' are indices into
                 // an array. This may be used below to change the output
                 // representation.
                 if (Array.isArray(data)) {
-                    lookupsAreIndeces = true;
+                    lookupsAreIndices = true;
                     for (i = 0; i < lookups.length; i++) {
                         if (lookups[i].length !== 1 ||
                             isNaN(Number(lookups[i])))
                         {
-                            lookupsAreIndeces = false;
+                            lookupsAreIndices = false;
                             break;
                         }
                     }
@@ -1615,9 +1615,9 @@ function main(argv) {
                  * See <https://github.com/trentm/json/issues/35> for why.
                  */
                 data = data[lookups[0].join('.')];
-            } else if (lookupsAreIndeces) {
+            } else if (lookupsAreIndices) {
                 /**
-                 * Special case: Lookups that are all indeces into an input
+                 * Special case: Lookups that are all indices into an input
                  * array are more likely to be wanted as an array of selected
                  * items rather than a 'JSON table' thing that we use otherwise.
                  */
