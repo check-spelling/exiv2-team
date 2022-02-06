@@ -32,7 +32,7 @@ $USAGE
 HardFeed copies all of the contents of a remote directory to the current 
 directory using ftp.  It establishes an ftp connection to the remote 
 site and it uses the ftp command \"ls\" to get a listing of the remote
-directory.  The two required parameters are the remote sytstem and the user
+directory.  The two required parameters are the remote system and the user
 name.  The optional third parameter is the remote directory to copy.  The 
 default is just the home directory of the ftp account.
 
