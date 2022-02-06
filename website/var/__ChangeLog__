@@ -203,7 +203,7 @@ Changes from version 0.26 to 0.27
 				(Jean-Luc CECCOLI)
 	- <a href="http://dev.exiv2.org/issues/0001340">0001340</a>:	Infinite loop bugs in Libexiv2 Exiv2::Image::printIFDStructure()
 				(Sanjay Rawat)
-	- <a href="http://dev.exiv2.org/issues/0001325">0001325</a>:	Crash in exiv2  - Nikon1MakerNote::printBarValue (nikonnm.cpp)
+	- <a href="http://dev.exiv2.org/issues/0001325">0001325</a>:	Crash in exiv2  - Nikon1MakerNote::printBarValue (nikonmn.cpp)
 				(Thibaud Mouton)
 	- <a href="http://dev.exiv2.org/issues/0001322">0001322</a>:	Exception in PentaxMakerNote::printShutterCount, source: pentaxmn.cpp
 				(Norbert Wagner)
