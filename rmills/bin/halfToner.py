@@ -114,7 +114,7 @@ def establishProxyDiv( proxyDivision ):
 		print " -->  8.  Makes proxies 1/8 the original resolution dimensions"
 		newProxyDivision = input("\n\n Please provide a number choice for divisional level to make proxies: ")
 		if not newProxyDivision in choiceList:
-			print "\n What you have enterred is not in the list of options above, please chose again."
+			print "\n What you have entered is not in the list of options above, please chose again."
 			newProxyDivision = input("\n\n Please provide a number choice for divisional level to make proxies: ")
 		
 		return int(round(newProxyDivision))
