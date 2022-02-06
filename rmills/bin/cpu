@@ -21,7 +21,7 @@ my $bExecute = $nPaths == 1 ;
 
 sub syntax
 {
-	print "useage: cpu path+" . "\n" ;
+	print "usage: cpu path+" . "\n" ;
 	exit 1;
 }
 

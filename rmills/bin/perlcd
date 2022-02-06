@@ -23,7 +23,7 @@ sub Syntax
    my $CD            ;
    $CD               = $ENV{"CD"}            or $CD            = "" ;
    
-   die "Useage $0 <target>\ntarget=file or package or product\n" 
+   die "Usage $0 <target>\ntarget=file or package or product\n" 
      . "Environment CD            = $CD\n"
      ;
 }

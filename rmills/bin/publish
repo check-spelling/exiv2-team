@@ -6,7 +6,7 @@ function main(arguments)
 {
 
 if ( ! arguments.length ) {
-	print("useage: publish [-option [value]+]+ ") ;
+	print("usage: publish [-option [value]+]+ ") ;
 	print(''
 	+ '-directory PhotoDirectory ' 
 	+ '-nCols 3 '

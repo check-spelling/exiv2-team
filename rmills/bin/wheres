@@ -9,7 +9,7 @@
 # * Purpose:
 #   Search for executable on path
 # 
-# * Useage :
+# * Usage :
 #   None.
 # 
 # * Example:
@@ -52,7 +52,7 @@ use Cwd ;
     
     if ( !$ARGC ) {
       print "whereis version " . $version  ;
-      print "\nUseage: whereis [[name] ...] [-environment string]" ;
+      print "\nUsage: whereis [[name] ...] [-environment string]" ;
       print "\nE.g.  : whereis cl" ;
       print "\n      : whereis abc.h CPRLibrary.h -include" ;
       print "\n" ;

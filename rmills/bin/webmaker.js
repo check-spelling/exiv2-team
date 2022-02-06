@@ -5,7 +5,7 @@ main(arguments) ;
 function main(arguments)
 {
 
-if ( ! arguments.length ) return print("useage: webmaker <photo-directory> title webdirectory url nCols\n") ;
+if ( ! arguments.length ) return print("usage: webmaker <photo-directory> title webdirectory url nCols\n") ;
 
 // Options
 var directory 	= arguments.length > 0 ? new File(arguments[0].toString()) 	: null								;
