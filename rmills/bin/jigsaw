@@ -65,7 +65,7 @@ shadow=40x4+4+4        # shadow argument
 # Add the fixed option parts (do not adjust)
 shade_angle="${shade_angle}x21.78"       # shade azmuth angle
 shade_blur="0x$shade_blur"               # rounding blur radius limit
-shade_surface="${shade_surface}x50%"     # sigmodial-contrast midpoint
+shade_surface="${shade_surface}x50%"     # sigmoidal-contrast midpoint
 shade_contrast="${shade_contrast}%"      # reduce highlight intensity
 
 # Temporary working images (with auto-clean-up on exit)
