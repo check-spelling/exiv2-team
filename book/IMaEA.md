@@ -3034,7 +3034,7 @@ Iptc.Application2.Caption Caption 1
 ## 2.4 ICC Profile
 ![icc](icc.png)
 
-The ICC Profile is a standand alone file that can be embedded verbatim in many image formats.  The purpose of the ICC profile is to provide additional color data about the image.  Most colour images are encoded as RGB or CMYK.   When these are rendered on a device, it's necessary to know the actual colour of Red in the image and on the output device.  The Colour Management System (CMS) attempts to render the image to be the same on different devices.  This is of course impossible, however the aim of the ICC Profile is enable the software to achieve good colour fidelity when printing or displaying on different devices.
+The ICC Profile is a standalone file that can be embedded verbatim in many image formats.  The purpose of the ICC profile is to provide additional color data about the image.  Most colour images are encoded as RGB or CMYK.   When these are rendered on a device, it's necessary to know the actual colour of Red in the image and on the output device.  The Colour Management System (CMS) attempts to render the image to be the same on different devices.  This is of course impossible, however the aim of the ICC Profile is enable the software to achieve good colour fidelity when printing or displaying on different devices.
 
 The ICC Profile is a member of the TIFF family of image standards.  It has a header, a directory of "tags" and values for the tags.
 
