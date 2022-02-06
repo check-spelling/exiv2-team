@@ -1719,7 +1719,7 @@ void IPTC::accept(Visitor& visitor)
 //      out() << indent() << buff.toString(kttUByte,length);
         uint32_t i  =    0 ; // index
         uint32_t bs =    5 ; // blocksize
-        uint8_t  fs = 0x1c ; // field seperator
+        uint8_t  fs = 0x1c ; // field separator
         while (i+bs < length && ::getByte (buff,i) != fs ) i++; // find fs
         while (i+bs < length && ::getByte (buff,i) == fs ) {    // FS-RE-DS-short = byte, byte, byte, short ... data ....
             uint16_t record   = ::getByte (buff,i+1);
